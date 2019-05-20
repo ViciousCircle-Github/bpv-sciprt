@@ -1,6 +1,6 @@
-## bpv-script
+# bpv-script
 
-# simple script using bpv.exe to send founded on your web-browsers passwords to your ftp server.
+## simple script using bpv.exe to send founded on your web-browsers passwords to your ftp server.
 
 Instruction : 
 
